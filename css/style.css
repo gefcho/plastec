@@ -556,6 +556,10 @@ h6 {
   border: 1px solid #121619;
   border-radius: 3px;
 }
+.dark .service .feature {
+  border: 0;
+  border-radius: 0;
+}
 .dark .service .feature:hover {
   transform: none;
   background: transparent;
