@@ -137,7 +137,7 @@ h6 {
   color: #fff;
 }
 .main-logo {
-  max-width: 150px;
+  max-width: 250px;
 }
 .social_icons {
   width: 100%;
@@ -489,7 +489,7 @@ h6 {
 #countdown .launch-date {
   display: table-cell;
   vertical-align: middle;
-  background: #1d2328;
+  background: #007cc2;
   text-align: center;
   height: 160px;
   border-radius: 3px;
@@ -553,6 +553,8 @@ h6 {
   -moz-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
+  border: 1px solid #121619;
+  border-radius: 3px;
 }
 .dark .service .feature:hover {
   transform: none;
@@ -574,6 +576,8 @@ h6 {
 .sections {
   width: 100%;
   padding: 10% 8%;
+  background: #121619;
+  color: #fff;
 }
 .sections .service .row {
   display: flex;
@@ -977,7 +981,7 @@ img {
   left: 0;
   width: 320px;
   height: 100vh;
-  background-color: #007cc2;
+  background-color: #121619;
   z-index: 5;
   transition: 0.5s;
   transform: translateX(-100%);
@@ -1004,7 +1008,7 @@ img {
   top: 0;
   width: 50px;
   height: 50px;
-  background-color: #016f54;
+  background-color: #0079ba;
   padding: 0;
   border: 0;
 }
@@ -1100,6 +1104,9 @@ img {
 .item_info .item_content {
   padding: 10%;
 }
+.item_info .item_content h2 {
+  color: #007cc2;
+}
 .items.show {
   -webkit-transition: 0.3s;
   -ms-transition: 0.3s;
@@ -1123,7 +1130,7 @@ img {
   height: 50px;
   width: 50px;
   overflow: hidden;
-  background: #121619;
+  background: #0079ba;
   -webkit-transform: translateX(100px);
   -ms-transform: translateX(100px);
   -moz-transform: translateX(100px);
