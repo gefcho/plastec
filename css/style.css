@@ -4,6 +4,7 @@
 @import url(ionicons.min.css);
 @import url(bootstrap.min.css);
 @import url(animsition.min.css);
+@import url(magnific-popup.css);
 @import url(photoswipe.css);
 @import url(default-skin/default-skin.css);
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,100,200,300,500,600,700,800");
@@ -52,7 +53,7 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #5533FF;
+  background: #007cc2;
 }
 h1, h2 {
   margin-bottom: 20px;
@@ -102,11 +103,11 @@ h6 {
   background: #fff;
 }
 .gradient {
-  -webkit-background: linear-gradient(rgba(41, 222, 244, 0.95), rgba(85, 51, 255, 0.95));
-  -ms-background: linear-gradient(rgba(41, 222, 244, 0.95), rgba(85, 51, 255, 0.95));
-  -moz-background: linear-gradient(rgba(41, 222, 244, 0.95), rgba(85, 51, 255, 0.95));
-  -o-background: linear-gradient(rgba(41, 222, 244, 0.95), rgba(85, 51, 255, 0.95));
-  background: linear-gradient(rgba(41, 222, 244, 0.95), rgba(85, 51, 255, 0.95));
+  -webkit-background: linear-gradient(rgba(245, 227, 44, 0.95), rgba(1, 111, 84, 0.95));
+  -ms-background: linear-gradient(rgba(245, 227, 44, 0.95), rgba(1, 111, 84, 0.95));
+  -moz-background: linear-gradient(rgba(245, 227, 44, 0.95), rgba(1, 111, 84, 0.95));
+  -o-background: linear-gradient(rgba(245, 227, 44, 0.95), rgba(1, 111, 84, 0.95));
+  background: linear-gradient(rgba(245, 227, 44, 0.95), rgba(1, 111, 84, 0.95));
 }
 
 /* ------------------------------------- */
@@ -146,16 +147,16 @@ h6 {
   display: inline;
 }
 .social_icons li i {
-  font-size: 22px;
+  font-size: 28px;
   transition: all .3s;
   display: inline-block;
-  padding: 15px 25px;
+  padding: 10px 25px;
   background-color: #fff;
-  color: #5533FF;
+  color: #007cc2;
   border-radius: 3px;
 }
 .social_icons li i:hover {
-  color: #1a0099;
+  color: #028d6e;
   transition: .1s;
 }
 
@@ -258,7 +259,7 @@ h6 {
   font-size: 12px;
   font-weight: 500;
   margin: 0;
-  color: #5533FF;
+  color: #007cc2;
 }
 .project .item .caption .view {
   margin: 20px 15px;
@@ -266,7 +267,7 @@ h6 {
   height: 30px;
   width: 60px;
   line-height: 30px;
-  background: #5533FF;
+  background: #007cc2;
   color: #fff;
   font-size: 12px;
   float: right;
@@ -354,7 +355,7 @@ h6 {
   height: 50px;
   width: 50px;
   overflow: hidden;
-  background: #5533FF;
+  background: #007cc2;
   -webkit-transform: translateX(100px);
   -ms-transform: translateX(100px);
   -moz-transform: translateX(100px);
@@ -536,7 +537,7 @@ h6 {
 }
 .about.dark ul li i {
   font-size: 50px;
-  color: #53f;
+  color: #0079ba;
   margin-right: 15px;
 }
 .service {
@@ -563,7 +564,7 @@ h6 {
   margin: 0 0 5px 0;
 }
 .service .feature i {
-  color: #53f;
+  color: #0079ba;
   font-size: 2.2em;
 }
 
@@ -588,7 +589,7 @@ h6 {
 }
 .service .feature .view, .pricing .price .view {
   padding: 10px 5px;
-  background: #5533FF;
+  background: #007cc2;
   color: #fff;
   font-size: 12px;
   text-transform: uppercase;
@@ -639,7 +640,7 @@ h6 {
   transition: 0.2s;
   border: 1px solid #121619;
   border-radius: 3px;
-  background-color: #5533FF;
+  background-color: #007cc2;
 }
 .price:hover {
   -webkit-transform: translateY(-10px);
@@ -674,11 +675,11 @@ h6 {
   font-family: "Ionicons";
   float: left;
   margin-left: -20px;
-  color: #5533FF;
+  color: #007cc2;
 }
 .how-to-get i {
   padding-right: 5px;
-  color: #5533FF;
+  color: #007cc2;
 }
 
 /* ------------------------------------- */
@@ -743,16 +744,16 @@ h6 {
 }
 #contact_form .submit {
   position: relative;
-  background: #5533FF;
+  background: #007cc2;
   width: 100%;
   height: 40px;
   width: 100%;
 }
 #contact_form .submit:focus {
-  background: #5533FF;
+  background: #007cc2;
 }
 #contact_form .submit:hover {
-  background: #401aff;
+  background: #028d6e;
 }
 #form-messages {
   padding: 0 5px;
@@ -797,13 +798,13 @@ address.headlead img {
 address i {
   font-size: 1.5em;
   padding-right: 5px;
-  color: #5533FF;
+  color: #007cc2;
 }
 address a {
-  color: #5533FF;
+  color: #007cc2;
 }
 address a:hover {
-  color: #2200cc;
+  color: #028d6e;
 }
 
 /* ------------------------------------- */
@@ -864,7 +865,7 @@ footer .drag:hover {
   padding: 0.625em 1.5625em;
 }
 .button-light:hover:hover {
-  color: #5533FF;
+  color: #007cc2;
   background: #fff;
   border-color: #fff;
 }
@@ -877,14 +878,14 @@ footer .drag:hover {
   transition: 0.2s;
   border: 2px solid transparent;
   padding: 0.625em 1.5625em;
-  background: #5533FF;
+  background: #007cc2;
   border-radius: 3px;
 }
 .button-solid:focus {
-  background: #5533FF;
+  background: #007cc2;
 }
 .button-solid:hover {
-  background: #401aff;
+  background: #028d6e;
 }
 input:focus {
   outline: none !important;
@@ -897,7 +898,7 @@ button:focus {
 }
 .filled {
   background: #fff;
-  color: #5533FF;
+  color: #007cc2;
   font-weight: 700;
   display: inline-block;
   padding: 5px 10px;
@@ -927,11 +928,11 @@ p {
   margin-bottom: 20px;
 }
 p a {
-  color: #5533FF;
+  color: #007cc2;
   text-decoration: none;
 }
 p a:hover {
-  color: #2200cc;
+  color: #028d6e;
 }
 .row {
   padding: 0;
@@ -956,11 +957,11 @@ a:focus {
 }
 ::-moz-selection {
   color: #fff;
-  background: #5533FF !important;
+  background: #007cc2 !important;
 }
 ::selection {
   color: #fff;
-  background: #5533FF !important;
+  background: #007cc2 !important;
 }
 img {
   max-width: 100%;
@@ -976,7 +977,7 @@ img {
   left: 0;
   width: 320px;
   height: 100vh;
-  background-color: #53f;
+  background-color: #007cc2;
   z-index: 5;
   transition: 0.5s;
   transform: translateX(-100%);
@@ -1003,7 +1004,7 @@ img {
   top: 0;
   width: 50px;
   height: 50px;
-  background-color: #121619;
+  background-color: #016f54;
   padding: 0;
   border: 0;
 }
@@ -1051,7 +1052,7 @@ img {
 .menu-list li:hover {
   padding-left: 18px;
   transform: scale(1.03);
-  background-color: #401aff;
+  background-color: #028d6e;
 }
 
 /* ------------------------------------- */
