@@ -417,11 +417,12 @@ initPhotoSwipeFromDOM('.my-gallery');
   /* ------------------------------------- */
   /* Menu   ................... */
   /* ------------------------------------- */
-
+    // Show menu
     $('.menu-btn').on('click', function(e) {
       e.preventDefault();
       $('.menu').toggleClass('menu_active');
-    })
+    });
+    // Close menu after click on a:href and add animate scroll
     $('.menu-list').on('click', 'a', function(e) {
       if($(e.target).is('a')) {
         $('.menu').removeClass('menu_active');
@@ -431,6 +432,7 @@ initPhotoSwipeFromDOM('.my-gallery');
           scrollTop: $($(this).attr('href')).offset().top
       }, 500);
     });
+    // Close menu after click not menu div
     $(document).mouseup(function(e) {
       e.preventDefault();
       if (!$('.menu').is(e.target) && $('.menu').has(e.target).length === 0) {
