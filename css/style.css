@@ -564,6 +564,9 @@ h6 {
   transform: none;
   background: transparent;
 }
+.dark .service .feature i {
+  color: #028d6e;
+}
 .service .feature h6 {
   font-weight: 700;
   color: #333;
@@ -886,6 +889,7 @@ footer .drag:hover {
   transition: 0.2s;
   border: 2px solid transparent;
   padding: 0.625em 1.5625em;
+  color: #fff;
   background: #007cc2;
   border-radius: 3px;
 }
@@ -893,6 +897,7 @@ footer .drag:hover {
   background: #007cc2;
 }
 .button-solid:hover {
+  color: #fff;
   background: #028d6e;
 }
 input:focus {

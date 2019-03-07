@@ -93,6 +93,15 @@ $( document ).ready(function() {
         $('body').removeAttr('style');
       });
 
+      $(document).mouseup(function(e) {
+        e.preventDefault();
+        if (!$('.item_info').is(e.target) && $('.item_info').has(e.target).length === 0) {
+          $('.item_info').scrollTop(0);
+          $(item).removeClass('show');
+          $('body').removeAttr('style');
+        }
+      });
+
     });
 
   });
