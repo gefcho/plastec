@@ -374,7 +374,7 @@ initPhotoSwipeFromDOM('.my-gallery');
         $('.success').fadeIn();
         setTimeout(function(){
           $('.success').fadeToggle(200,0);
-        },1500);
+        },5000);
         $('.error').fadeOut();
   			// Set the message text.
   			$(formMessageSuccess).text(response);
@@ -389,14 +389,14 @@ initPhotoSwipeFromDOM('.my-gallery');
         $('.error').fadeIn();
         setTimeout(function(){
           $('.error').fadeToggle(200,0);
-        },1500);
+        },5000);
         $('.success').fadeOut();
 
   			// Set the message text.
   			if (data.responseText !== '') {
   				$(formMessageError).text(data.responseText);
   			} else {
-  				$(formMessageError).text('Oops! An error occured and your message could not be sent.');
+  				$(formMessageError).text('К сожалению произошла ошибка и Ваше сообщение не может быть отправлено. Попробуйте снова через некоторое время.');
   			}
   		});
   	});

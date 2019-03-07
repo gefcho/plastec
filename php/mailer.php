@@ -15,40 +15,40 @@
         if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
             // Set a 400 (bad request) response code and exit.
             http_response_code(400);
-            echo "Oops! There was a problem with your submission. Please complete the form and try again.";
+            echo "К сожалению возникла проблема с Вашей отправкой. Пожалуйста, заполните форму и попробуйте снова.";
             exit;
         }
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "mail.mohdnishat@gmail.com";
+        $recipient = "global@expoforum.by";
 
         // Set the email subject.
-        $subject = "You have a message from $name";
+        $subject = "У вас есть сообщение от $name";
 
         // Build the email content.
-        $email_content = "Name: $name\n";
+        $email_content = "Имя: $name\n";
         $email_content .= "Email: $email\n\n";
-        $email_content .= "Message:\n$message\n";
+        $email_content .= "Сообщение:\n$message\n";
 
         // Build the email headers.
-        $email_headers = "From: $name <$email>";
+        $email_headers = "От: $name <$email>";
 
         // Send the email.
         if (mail($recipient, $subject, $email_content, $email_headers)) {
             // Set a 200 (okay) response code.
             http_response_code(200);
-            echo "Thank You! Your message has been sent.";
+            echo "Благодарим Вас! Ваше сообщение отправлено.";
         } else {
             // Set a 500 (internal server error) response code.
             http_response_code(500);
-            echo "Oops! Something went wrong and we couldn't send your message.";
+            echo "К сожалению что-то пошло не так и Ваше сообщение не удалось отправить.";
         }
 
     } else {
         // Not a POST request, set a 403 (forbidden) response code.
         http_response_code(403);
-        echo "There was a problem with your submission, please try again.";
+        echo "Возникла проблема с вашей отправкой. Повторите попытку.";
     }
 
 ?>
