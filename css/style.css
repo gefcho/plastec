@@ -730,7 +730,11 @@ h6 {
   display: table;
   padding: 0 5px;
 }
-#contact_form .input-name, #contact_form .input-email, #contact_form .input-message, #contact_form .submit {
+#contact_form .input-name,
+#contact_form .input-email,
+#contact_form .input-tel,
+#contact_form .input-message,
+#contact_form .submit {
   border: none;
   margin-bottom: 10px;
   padding: 10px;
@@ -747,7 +751,11 @@ h6 {
   background: #1d2328;
   color: #fff;
 }
-#contact_form .input-name:focus, #contact_form .input-email:focus, #contact_form .input-message:focus, #contact_form .submit:focus {
+#contact_form .input-name:focus,
+#contact_form .input-email:focus,
+#contact_form .input-tel:focus,
+#contact_form .input-message:focus,
+#contact_form .submit:focus {
   background: #121619;
 }
 #contact_form .input-message {

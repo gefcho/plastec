@@ -381,7 +381,8 @@ initPhotoSwipeFromDOM('.my-gallery');
 
   			// Clear the form.
   			$('.input-name').val('');
-  			$('.input-email').val('');
+        $('.input-email').val('');
+        $('.input-tel').val('');
   			$('.input-message').val('');
   		})
   		.fail(function(data) {
@@ -396,7 +397,7 @@ initPhotoSwipeFromDOM('.my-gallery');
   			if (data.responseText !== '') {
   				$(formMessageError).text(data.responseText);
   			} else {
-  				$(formMessageError).text('К сожалению произошла ошибка и Ваше сообщение не может быть отправлено. Попробуйте снова через некоторое время.');
+  				$(formMessageError).text('К сожалению возникла проблема с отправкой сообщения. Пожалуйста, заполните форму и попробуйте снова.');
   			}
   		});
   	});

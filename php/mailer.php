@@ -9,13 +9,14 @@
         $name = strip_tags(trim($_POST["name"]));
 				$name = str_replace(array("\r","\n"),array(" "," "),$name);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+        $telephone = filter_var(trim($_POST["tel"]), FILTER_SANITIZE_NUMBER_INT);
         $message = trim($_POST["message"]);
 
         // Check that data was sent to the mailer.
         if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
             // Set a 400 (bad request) response code and exit.
             http_response_code(400);
-            echo "К сожалению возникла проблема с Вашей отправкой. Пожалуйста, заполните форму и попробуйте снова.";
+            echo "К сожалению возникла проблема с отправкой сообщения. Пожалуйста, заполните форму и попробуйте снова.";
             exit;
         }
 
@@ -24,15 +25,20 @@
         $recipient = "global@expoforum.by";
 
         // Set the email subject.
-        $subject = "У вас есть сообщение от $name";
+        $subject = "Обратная связь c сайта plastec.by";
 
         // Build the email content.
-        $email_content = "Имя: $name\n";
-        $email_content .= "Email: $email\n\n";
+        $email_content = "ФИО: $name\n";
+        $email_content .= "Email: $email\n";
+        $email_content .= "Мобильный телефон: $telephone\n";
         $email_content .= "Сообщение:\n$message\n";
 
         // Build the email headers.
-        $email_headers = "От: $name <$email>";
+        $email_headers = "From: $email". "\r\n" .
+			"MIME-Version: 1.0" . "\r\n" .
+			"Content-Transfer-Encoding: 8bit\r\n".
+            "Content-type: text/plain; charset=\"UTF-8\"" . "\r\n";
+        $email_headers .= "Reply-To: $email";
 
         // Send the email.
         if (mail($recipient, $subject, $email_content, $email_headers)) {
@@ -48,7 +54,7 @@
     } else {
         // Not a POST request, set a 403 (forbidden) response code.
         http_response_code(403);
-        echo "Возникла проблема с вашей отправкой. Повторите попытку.";
+        echo "Возникла проблема с отправкой сообщения. Пожалуйста, повторите попытку.";
     }
 
 ?>
