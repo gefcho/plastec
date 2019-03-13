@@ -8,6 +8,26 @@
 @import url(photoswipe.css);
 @import url(default-skin/default-skin.css);
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,100,200,300,500,600,700,800");
+@font-face {
+  font-family: 'Futuris';
+  src: url('../fonts/logo/Futuris-Bold.eot');
+  src: url('../fonts/logo/Futuris-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/logo/Futuris-Bold.woff2') format('woff2'),
+    url('../fonts/logo/Futuris-Bold.woff') format('woff'),
+    url('../fonts/logo/Futuris-Bold.svg#Futuris-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GOST type B';
+  src: url('../fonts/logo/GOST-2304-81typeB.eot');
+  src: url('../fonts/logo/GOST-2304-81typeB.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/logo/GOST-2304-81typeB.woff2') format('woff2'),
+    url('../fonts/logo/GOST-2304-81typeB.woff') format('woff'),
+    url('../fonts/logo/GOST-2304-81typeB.svg#GOST-2.304-81typeB') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -64,8 +84,17 @@ h3, h4, h5, h6 {
   word-break: break-word;
 }
 h1 {
-  font-size: 40px;
-  font-weight: 300;
+  font-family: 'Futuris', sans-serif;
+  font-size: 56px;
+  font-weight: 800;
+  color: #016f54;
+}
+h1 span {
+  color: #0079ba;
+}
+h1 span span {
+  font-family: 'GOST type B';
+  font-weight: 400;
 }
 h2 {
   font-size: 30px;
