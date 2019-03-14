@@ -1268,6 +1268,9 @@ img {
   }
 }
 @media only screen and (max-width: 460px) {
+  .h-content {
+    padding: 10px;
+  }
   .service .feature .view, .pricing .price .view {
     opacity: 1;
   }
